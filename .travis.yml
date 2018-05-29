@@ -6,5 +6,6 @@ deploy:
   secret_access_key: $AWS_SECRET_KEY
   bucket: $AWS_S3_BUCKET
   acl: public_read
+  region: eu-central-1
   on:
     repo: eustatos/aws-deploy
