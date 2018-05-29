@@ -1,7 +1,6 @@
-      - provider: s3
-        ⋮ # rest of S3 deployment for MyApp.zip
-      - provider: codedeploy
-        access_key_id: $AWS_ACCESS_KEY
-        secret_access_key: $AWS_SECRET_KEY
-        bucket: $AWS_S3_BUCKET
+deploy:
+  provider: s3
+  access_key_id: AWS_ACCESS_KEY
+  secret_access_key: AWS_SECRET_KEY
+  bucket: AWS_S3_BUCKET
 
