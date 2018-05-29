@@ -1,6 +1,9 @@
 deploy:
   provider: s3
-  access_key_id: AWS_ACCESS_KEY
-  secret_access_key: AWS_SECRET_KEY
-  bucket: AWS_S3_BUCKET
-
+  access_key_id: AKIAJJBTRQ4SILE2WHHA
+  secret_access_key:
+    secure: rmGhh+vhViQLsQux0Nk+bSKoUhvEwz7OsdL/rGhFrSXxVF5hA1MgQCDH72DnPLH7+v3UX+pmPmvppQ8uLhchWndx/Zcmsxt2jVJyiUMXSa1QfzrGiMCtbzrF43mnkD/chyhIdUq02YMrPG892tI8sDTVwt3t4KB4Q7FbO/DW9a8Ci/7ViZtyIuGq5mhLRcXuL656t0FiG4odwEyyHmFFkN9piWIA333hOeagKC9zOTDWHsYGfZhIKuqinph6rYE+2vKM59ZH6WaJKqkAVOYCY6Wqs3/apgqOU9VBMyyVRVBivrwF+/Zpupq34s02ZUQYEUSX3UuRqVMpZBUV1dN6anffVH3+foGUGzwEFWWXVni/T51NcAoNrGrzH8wefXxbGbvBuce5n8cXQTVMtB7PIGtObBmuOp1NzlRqoFT2+g7ylR6rsLAAeP5tc7FpwssJ8q+JT+hhGBlh/kULy6eHWEt4BziDw8+4hqQ4gVGS6AZ3E0oRJKkS3ITOALNxRv7Zgmba7uPWX3cQJR3D7/o80jTVIHWN+32r1Zo/HLopH54xp1Jq/rEvq41TySyAampidMj5QPcguKwHxKeoaCBW8SrZvdtbpiVPSPlb6OJZKG+zyGggcW18xoYBq3QPlGTv+HwCIpGT7BaRHmPZjGvS2niXImT4Ccw6MCw18ZmoRuc=
+  bucket: eustatos-gitlab-deploy
+  acl: public_read
+  on:
+    repo: eustatos/aws-deploy
